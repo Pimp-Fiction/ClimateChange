@@ -5,3 +5,17 @@ Climate change is one of the most controversial topics of the 21st century! Clim
 <p> In this Project Shrey Mehta and I have taken climate change data to visualize the temerature variation through Exploratory Data Analysis using R studio.
 
 <h3> Preparing Data
+  This data is chosen from https://www.kaggle.com/vageeshabudanur/riseintemp-dataset
+  <ul>
+    <li>Year: the observation year,</li><br>
+<li>Month: the observation month,</li><br>
+<li>MEI: multivariate El Nino Southern Oscillation index (MEI), a measure of the strength of the El Nino/La Nina-Southern Oscillation (a weather effect in the Pacific Ocean that affects global temperatures),</li><br>
+<li>CO2: atmospheric concentrations of carbon dioxide,</li><br>
+<li>CH4: atmospheric concentrations of methane,</li><br>
+<li>N2O: atmospheric concentrations of nitrous oxide,</li><br>
+<li>CFC-11: atmospheric concentrations of trichlorofluoromethane,</li><br>
+<li>CFC-12: atmospheric concentrations of dichlorodifluoromethane,</li><br>
+<li>TSI: the total solar irradiance (TSI) in W/m2 (the rate at which the sun’s energy is deposited per unit area). Due to sunspots and other solar phenomena, the amount of energy that is given off by the sun varies substantially with time,</li><br>
+<li>Aerosols: the mean stratospheric aerosol optical depth at 550 nm. This variable is linked to volcanoes, as volcanic eruptions result in new particles being added to the atmosphere, which affect how much of the sun’s energy is reflected back into space,</li><br>
+<li>Temp: the difference in degrees Celsius between the average global temperature in that period and a reference value.</li><br>
+  </ul>
