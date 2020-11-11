@@ -25,7 +25,6 @@ CO<Sub>2</sub>,N<sub>2</sub>O and CH<sub>4</sub>:Expressed in ppmv<br>
 CFC.11 and CFC.12: Expressed in ppbv
 
 <h3>👉 Exploratory Data Anlysis (EDA)</h3><br>
-1. Bar Plot 
-
+Here are a few plots based on the code base written:
 
 
