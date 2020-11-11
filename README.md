@@ -26,6 +26,6 @@ CFC.11 and CFC.12: Expressed in ppbv
 
 <h3>👉 Exploratory Data Anlysis (EDA)</h3><br>
 Here are a few plots based on the code base written:
-![]
+![](BarPlot.png)
 
 
