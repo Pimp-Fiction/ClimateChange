@@ -1,3 +1,4 @@
+//PREPARING DATA
 climate_change <- read.csv(file = "climate_change.csv",TRUE, sep = ",", stringsAsFactors = FALSE)
 str(climate_change)
 dim(climate_change)
@@ -20,6 +21,7 @@ library(ggplot2)
 library(plotly)
 library("RColorBrewer")
 
+// HANDLING MISSING DATA
 new_climate_change <- na.omit(climate_change)
 dim(new_climate_change)
 
