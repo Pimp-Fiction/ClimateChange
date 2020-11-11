@@ -31,5 +31,5 @@ A few plots based on the code base written have been added to the repository.
 From the summary of regression model we get an eqaution, <h4>0.01∗x−3.59</h4>
 The plots of Linear and Multiple Regression have been added to the repository.
 
-<h2>THANK YOU. 👋 ,/h2>
+<h2>THANK YOU. 👋 </h2>
 
