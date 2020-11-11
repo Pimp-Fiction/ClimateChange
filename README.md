@@ -4,7 +4,7 @@ Climate change is one of the most controversial topics of the 21st century! Clim
 <p> Climate change fatalities are generally linked to four different catalysts: Rising temperatures, Declining air quality, Extreme weather and Vector-borne illnesses.
 <p> In this Project Shrey Mehta and I have taken climate change data to visualize the temerature variation through Exploratory Data Analysis using R studio.
 
-<h3> Preparing Data
+<h3> Preparing Data: </h3><br>
   This data is chosen from https://www.kaggle.com/vageeshabudanur/riseintemp-dataset
   <ul>
     <li>Year: the observation year,</li><br>
