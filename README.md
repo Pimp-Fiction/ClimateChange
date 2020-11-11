@@ -21,5 +21,5 @@ Climate change is one of the most controversial topics of the 21st century! Clim
   </ul>
 
 Note:<br>
-CO<Sub>2</sub>,N<sub>2</sub>O and CH<sub>4</sub>:Expressed in ppmv
+CO<Sub>2</sub>,N<sub>2</sub>O and CH<sub>4</sub>:Expressed in ppmv<br>
 CFC.11 and CFC.12: Expressed in ppbv
