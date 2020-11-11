@@ -1,4 +1,4 @@
-//PREPARING DATA
+# PREPARING DATA
 climate_change <- read.csv(file = "climate_change.csv",TRUE, sep = ",", stringsAsFactors = FALSE)
 str(climate_change)
 dim(climate_change)
@@ -21,10 +21,13 @@ library(ggplot2)
 library(plotly)
 library("RColorBrewer")
 
-// HANDLING MISSING DATA
+# HANDLING MISSING DATA
 new_climate_change <- na.omit(climate_change)
 dim(new_climate_change)
 
+# Exploratory Data Anlysis (EDA)
+
+# Bar Plot
 climate_change_chart <- ggplot(climate_change, aes(x = Year, y = Temp, fill = CO2)) + 
   xlab("Year") +
   ylab("Temperature") +
@@ -33,11 +36,11 @@ barplot <- climate_change_chart +
   geom_bar( position = "dodge", stat = "identity",color= "white")
 ggplotly(barplot)
 
+# Line Plot
 library(lubridate)
 # adding Year-Month variable as date
 climate_change_ymd <- climate_change %>%
   mutate(year_month = ymd(paste(climate_change$Year, climate_change$Month, truncated = 1))) 
-
 L1 <- ggplot(climate_change_ymd, aes(year_month, Temp)) + 
   geom_line() + 
   geom_smooth(se=FALSE, linetype = "dotted") + 
@@ -60,6 +63,7 @@ Tg <- ggplot(climate_change, aes(as.factor(Month), Temp)) +
 # theme(legend.position = "none")
 ggplotly(Tg)
 
+# Variations of CO2, N2O, CH4 and MEI by year
 library(ggpubr)
 #par(mfrow=c(2,2))
 scat_plot1 <-  ggplot(climate_change_ymd, aes(year_month, CO2))+geom_line(colour="blueviolet")+geom_smooth(method = "lm")+ggtitle("Carbon Dioxide")
@@ -73,6 +77,7 @@ annotate_figure(grapgh_arrange,
                 top = text_grob("Vartations of CO_2, N2O, CH4 and MEI by year", color = "red", face = "bold", size = 14)
 )
 
+# Variations of CFC11, CFC12, Total Solar Irradiance (TSI) and Aerosolos by year
 scat_plot5 <-  ggplot(climate_change_ymd, aes(year_month, CFC_a))+geom_line(colour="blue")+ggtitle("CFC-11") +
   ylab("CFC-11")
 scat_plot6<-  ggplot(climate_change_ymd, aes(year_month, CFC_b))+geom_line(colour="green")+ggtitle("CFC-12") +
@@ -86,17 +91,20 @@ annotate_figure(grapgh_arrange,
                 top = text_grob("Vartations of CFC-11,CFC-12, TSI and Aerosols by year", color = "blue", face = "bold", size = 14)
 )
 
+# Linear Regression Model
 fit=lm(Temp~CO2,data=climate_change)
 summary(fit)
 library(ggiraph)
 library(ggiraphExtra)
 ggPredict(fit,se=TRUE,interactive=TRUE)
 
+# Multiple Regression Model
 climate_multreg <- filter(climate_change, Month == "Jan" | Month == "Feb")
 fit1=lm(Temp~Year+Month,data=climate_multreg)
 summary(fit1)
 ggPredict(fit1,se=TRUE, interactive=TRUE)
 
+# Animation
 library(gganimate)
 ggplot(climate_change, aes(Year, Temp, size = CO2, colour = Month)) + geom_point(alpha = 0.2, show.legend = FALSE) +
   facet_wrap(~Month) +
