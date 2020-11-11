@@ -27,6 +27,9 @@ CFC.11 and CFC.12: Expressed in ppbv
 <h3>👉 Exploratory Data Anlysis (EDA)</h3><br>
 A few plots based on the code base written have been added to the repository.
 
-<h3>👉 Linear Regression Model </h3><br>
-From the summary of regression model we get an eqaution, <br><h4>0.01∗x−3.59</h4>
+<h3>👉 Linear Regression and Mutiple Regression Model: </h3><br>
+From the summary of regression model we get an eqaution, <h4>0.01∗x−3.59</h4>
+The plots of Linear and Multiple Regression have been added to the repository.
+
+<h2>THANK YOU. 👋 ,/h2>
 
